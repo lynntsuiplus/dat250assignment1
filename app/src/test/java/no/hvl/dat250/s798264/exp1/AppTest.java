@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test void testConvertToMeters() {
-        assertEquals(0.127, App.convetToMeters("in", 5));
+        assertEquals(0.127, App.convertToMeters("in", 5));
     }
 
-    @Test void testMeterConvertToOtherScalers() {
-        assertEquals(9.84251968503937,App.convertToOtherScalers("ft", 3));
+    @Test void testMeterConvertToOtherScalars() {
+        assertEquals(9.84251968503937,App.convertToOtherScalars("ft", 3));
     }
 
 }
