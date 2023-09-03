@@ -7,8 +7,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    @Test void testConvertToMeters() {
+        assertEquals(0.127, App.convetToMeters("in", 5));
     }
+
+    @Test void testMeterConvertToOtherScalers() {
+        assertEquals(9.84251968503937,App.convertToOtherScalers("ft", 3));
+    }
+
 }
